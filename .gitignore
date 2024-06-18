@@ -162,3 +162,6 @@ cython_debug/
 #.idea/
 artifacts/*
 runs/*
+model_weights/*
+runs/*
+yolov8l.pt
