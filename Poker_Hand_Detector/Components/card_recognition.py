@@ -42,7 +42,7 @@ class CardRecognizer:
             # Save the model
             os.makedirs(self.config.output_dir, exist_ok=True)
             model_best_weight_path = os.path.join(self.config.output_dir, "hand_detector.pt")
-            CRartifacts: CardRecognizerArtifact = CardRecognizerArtifact(model_best_weights="Poker_Hand_Detection\runs\detect\train2\weights\best.pt")
+            CRartifacts: CardRecognizerArtifact = CardRecognizerArtifact(model_best_weights="Poker_Hand_Detection/runs/detect/train2/weights/best.pt")
             model.save(model_best_weight_path)
             logging.info("Model saved successfully")
             return CRartifacts

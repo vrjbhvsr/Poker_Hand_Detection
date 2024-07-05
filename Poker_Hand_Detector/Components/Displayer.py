@@ -28,7 +28,7 @@ class Display:
             cap.set(4, 720)   # Set height
 
             # Load YOLO model
-            model = YOLO('C:/Users/49179/Desktop/Poker_Hand_Detection/runs/detect/train2/weights/best.pt')
+            model = YOLO(r'C:\Users\49179\Desktop\Poker_Hand_Detection\artifacts\runs\detect\train2\weights\best.pt')
 
             while True:
                 success, img = cap.read()  # Capture frame from webcam
